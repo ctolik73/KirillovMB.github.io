@@ -24,7 +24,7 @@
     <![endif]-->
   </head>
   <body>
-    <div class="main">
+    <div class="main parallax-window" data-parallax="scroll" data-speed="0.2" data-image-src="img/main-bg.jpg">
     <div class="main-overlay"></div>
       <div class="wrapper">
         <div class="main-header">
@@ -112,6 +112,7 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.min.js"></script>
   <script>
   $(document).ready(function() {
     $(".slowly").on("click", function (event) {
@@ -120,7 +121,6 @@
       top = $(id).offset().top;
       $('body,html').animate({scrollTop: top}, 800);
   });
-
   });
   </script>
   </body>
